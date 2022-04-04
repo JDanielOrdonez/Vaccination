@@ -1,5 +1,5 @@
 # Vaccination
-Practica de pagina web con Css puro y html <br/>
+Practica de pagina web con Css y html <br/>
 Herramientas <br/><br/>
 html <br/>
 css <br/>
