@@ -10,10 +10,13 @@
     height: 100px;    
     display: flex;
     margin: auto;
+    cursor: pointer;
+    
 }
 .head{    
     width: 40%;
-    height: 100px;   
+    height: 100px; 
+    display: flex;
 }
 .navs{        
     width: 60%;
@@ -43,6 +46,7 @@
 
 
 /* MAIN CON IMAGEN */
+
 main .caja{
     width: 100%;
     height: 600;    
@@ -50,7 +54,15 @@ main .caja{
     flex-direction: row;    
 }
 main .img{
-    width: 50%;/*usar el 100% del 50% del contenedor*/
+    width: 40%;/*usar el 100% del 50% del contenedor*/
+}
+main .caja{
+    display: flex;
+    /* estas tres lineas para responsive */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+    /* justify-content: space-between; */
 }
 main .descripcion{
     width: 50%;
@@ -82,15 +94,19 @@ main .descripcion .btns i{
     padding-right: 10px;
 }
 main .gal_vacunas{
-    width: 100%;   
     display: flex;
-    justify-content: space-between;   
+    justify-content: center;
 }
-main .gal_vacunas a img{
-    width: 100%;
-    height: 200px;   
+main .gal_vacunas .vacunas{
+    width: 90%;   
+    display: flex;
+    /* justify-content: center;    */
 }
-main .gal_vacunas a img:hover{
+main .gal_vacunas .vacunas a img{
+    width: 80%;
+    height: 200px;
+}
+main .gal_vacunas .vacunas a img:hover{
     width: 110%;
 }
 .informacion{
@@ -137,7 +153,6 @@ main .gal_vacunas a img:hover{
 }
 .caracteristicas .img_enfermera{
     width: 50%;
-    height: 100%;
 }
 .caracteristicas .img_uno{
     width: 100%;
@@ -153,7 +168,7 @@ main .gal_vacunas a img:hover{
 }
 .caracteristicas .va_parrafo{
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color:#6E7C94;
     font-weight: bold;
     font-size: 15px;
@@ -162,15 +177,17 @@ main .gal_vacunas a img:hover{
 .caracteristicas .va_info{
     display: flex;
     align-items: center;
-    padding-bottom: 25px;
+    /* padding-bottom: 0; */
 }
-.caracteristicas .va_parrafoDos{    
+.caracteristicas .va_parrafoUno{    
     margin-bottom: 10px;
     font-weight: bold;
     color:#6E7C94;    
     font-size: 15px;
     line-height: 200%;
     margin-left: 30px;
+    display: none;
+
 }
 .caracteristicas button{
     background: none;
@@ -180,6 +197,9 @@ main .gal_vacunas a img:hover{
     line-height: normal;
     padding: 0;
 } 
+.caracteristicas button img:hover{
+    width: 35px;
+}
 .contacto{
     width: 100%;
     display: flex;    

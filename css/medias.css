@@ -1,0 +1,64 @@
+@media screen and (max-width:1177px)
+{
+    .head {
+        width: 30%;
+    }
+    .caracteristicas .va_parrafo{
+        margin-bottom: 10px;
+    }
+    main .img img{
+        width: 99%;
+    }
+    .contacto .img_enfermero{
+        width: 49%;
+    }
+    .contacto .img_enfermero img{
+        width: 100%;
+    }
+    .caracteristicas .img_enfermera{        
+        height: 80%;
+    }
+}
+@media screen and (max-width:999px){
+    main .caja .descripcion{
+        width: 45%;
+    }
+    .head img{
+        width: 110%;
+    }
+    .navs .hoax{
+        margin-left: 10px;
+    }
+    .contacto{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacto .contac{        
+        width: 40%;
+    }
+    .contacto .img_enfermero{
+        width: 49%;        
+    }
+    .contacto .contacUno button{
+       font-size: 12px;
+       width: 100%;
+    }
+}
+@media screen and (max-width:943px) {
+    main .caja .descripcion h2{
+        font-size: 50px;
+        color: #1F3E72;    
+    }
+    
+}
+@media screen and (max-width:791px){
+    main .caja .descripcion h2{
+        font-size: 30px;
+        color: #1F3E72;    
+    }
+    main .caja .descripcion .btns{
+        font-size: 13px;
+        color: #1F3E72;    
+    }
+}

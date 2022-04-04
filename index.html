@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/409a5d3f21.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/medias.css">
 </head>
 <body>    
     <header class="header">
@@ -45,12 +46,14 @@
             <div class="img">
                 <img src="img/enfermera.jpg" alt="Enfermera">
             </div>
-        </div>
+        </div>        
         <div class="gal_vacunas">
-            <a href="https://www.astrazeneca.mx/"><img src="img/Astrazeneca.png" alt="Vacuna Astrazeneca"></a>
-            <a href="#"><img src="img/sinovac.png" alt="sinovac"></a>
-            <a href="#"><img src="img/pfizer.png" alt="pfizer"></a>
-            <a href="#"><img src="img/moderna.png" alt="moderna"></a>                                    
+            <div class="vacunas">
+                <a href="https://www.astrazeneca.mx/"><img src="img/Astrazeneca.png" alt="Vacuna Astrazeneca"></a>
+                <a href="#"><img src="img/sinovac.png" alt="sinovac"></a>
+                <a href="#"><img src="img/pfizer.png" alt="pfizer"></a>
+                <a href="#"><img src="img/moderna.png" alt="moderna"></a>                                    
+            </div>
         </div>
     </main>    
     <div class="informacion">
@@ -130,15 +133,20 @@
             <div class="va_info">
                 <img src="img/escudo_icon.png" alt="">
                 <span>Avoid alcoholic beverages</span>
-                <button><img src="img/desplegar.png" alt=""></button>
+                <button onclick="mostrar('va_parrafo')"><img src="img/desplegar.png" alt=""></button>
+            </div>
+            <div id="va_parrafo" class="va_parrafoUno">
+                <p>Stress has a profound effect on immune work. <br>
+                    Moreover, prolonged stress can increase cortisol <br>
+                    production and oxidation stress in the body</p>
             </div>
             <div>
                 <div class="va_info">
                     <img src="img/cerrar_icon.png" alt="">
                     <span>Avoid stress</span>
-                    <button><img src="img/desplegar.png" alt=""></button>
+                    <button onclick="mostrar('parrafoUno')"><img src="img/desplegar.png" alt=""></button>
                 </div>
-                <div class="va_parrafoDos">
+                <div id="parrafoUno" class="va_parrafoUno">
                     <p>Stress has a profound effect on immune work. <br>
                         Moreover, prolonged stress can increase cortisol <br>
                         production and oxidation stress in the body</p>
@@ -147,18 +155,33 @@
             <div class="va_info">
                 <img src="img/barra_icon.png" alt="">
                 <span>Eat healthy food</span>
-                <button><img src="img/desplegar.png" alt=""></button>
+                <button onclick="mostrar('parrafoDos')"><img src="img/desplegar.png" alt=""></button>
+            </div>
+            <div id="parrafoDos" class="va_parrafoUno">
+                <p>Stress has a profound effect on immune work. <br>
+                    Moreover, prolonged stress can increase cortisol <br>
+                    production and oxidation stress in the body</p>
             </div>
             <div class="va_info">
                 <img src="img/ok_icon.png" alt="">
                 <span>Get enough sleep</span>
-                <button><img src="img/desplegar.png" alt=""></button>
+                <button onclick="mostrar('parrafoTres')"><img src="img/desplegar.png" alt=""></button>
+            </div>
+            <div id="parrafoTres" class="va_parrafoUno">
+                <p>Stress has a profound effect on immune work. <br>
+                    Moreover, prolonged stress can increase cortisol <br>
+                    production and oxidation stress in the body</p>
             </div>
             <div class="va_info">
                 <img src="img/corazon_icon.png" alt="">
                 <span>Exercise or physical activity</span>
-                <button><img src="img/desplegar.png" alt=""></button>
-            </div>        
+                <button onclick="mostrar('parrafoCuatr')"><img src="img/desplegar.png" alt=""></button>
+            </div>      
+            <div id="parrafoCuatr" class="va_parrafoUno">
+                <p>Stress has a profound effect on immune work. <br>
+                    Moreover, prolonged stress can increase cortisol <br>
+                    production and oxidation stress in the body</p>
+            </div>      
         </div>
     </div>
     <div class="informacion">
@@ -261,5 +284,6 @@
             </div>
         </div> 
     </footer>
+    <script src="js/efectos.js"></script>
 </body>
 </html>  
